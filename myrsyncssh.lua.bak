@@ -1,0 +1,20 @@
+settings {
+    statusInterval = 1,                       --状态文件写入最短时间
+    maxDelays = 1                            --最大延迟
+}
+sync {
+    default.rsync,
+    source    = "/root/src",
+    target    = "root@47.254.19.9:/root/dest",
+    delete    = true,
+    -- excludeFrom = "/etc/rsyncd.d/rsync_exclude.lst",
+    rsync     = {
+        binary    = "/usr/bin/rsync",
+        acls      = true,
+        archive   = true,
+        compress  = true,
+        owner     = true,
+        perms     = true,
+        verbose   = true
+    }
+}

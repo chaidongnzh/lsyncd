@@ -1,0 +1,17 @@
+version: '3.2'
+
+services:
+  client:
+    image: chaidong
+    restart: always
+    ports:
+    - 8122:22
+    volumes:
+    - /root/.ssh:/root/.ssh
+    - /etc/ssh:/etc/ssh 
+    - /root/src:/root/src
+    - /root/dest:/root/dest
+    - ./conf:/etc/lsyncd
+    environment:
+      TZ: Asia/Shanghai
+

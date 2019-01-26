@@ -2,7 +2,7 @@ FROM alpine
 
 RUN apk --no-cache add lsyncd openssh supervisor
 
-ADD supervisord.conf /etc/supervisord.conf
+ADD init.sh /usr/local/bin/init.sh
 
 EXPOSE 22
-CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
+CMD ["/usr/local/bin/init.sh"]
