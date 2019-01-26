@@ -54,7 +54,7 @@ fi
 if [[ $rsync_enable ]];then
 cat <<EOF >> /etc/supervisord.conf 
 [program:rsync]
-command=/usr/bin/rsync --daemon -v --config=/etc/rsyncd.conf
+command=/usr/bin/rsync --daemon --no-detach -v --config=/etc/rsyncd.conf
 user=root
 autostart=true
 autorestart=unexpected
