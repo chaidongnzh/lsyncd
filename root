@@ -1,0 +1,1 @@
+*/1 * * * * /bin/sh -x /usr/local/bin/backup.sh > /dev/null 2>&1

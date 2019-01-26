@@ -14,6 +14,8 @@ autostart=true
 autorestart=unexpected
 numprocs=1
 startsecs = 0
+stdout_logfile=/dev/fd/1
+stdout_logfile_maxbytes=0
 
 EOF
 fi
@@ -28,6 +30,8 @@ autostart=true
 autorestart=unexpected
 numprocs=1
 startsecs = 0
+stdout_logfile=/dev/fd/1
+stdout_logfile_maxbytes=0
 
 EOF
 fi
@@ -41,6 +45,8 @@ autostart=true
 autorestart=unexpected
 numprocs=1
 startsecs = 0
+stdout_logfile=/dev/fd/1
+stdout_logfile_maxbytes=0
 
 EOF
 fi
@@ -54,6 +60,8 @@ autostart=true
 autorestart=unexpected
 numprocs=1
 startsecs = 0
+stdout_logfile=/dev/fd/1
+stdout_logfile_maxbytes=0
 
 EOF
 fi
